@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STRIKE : HAKAI PROTOCOL</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- ================= TITLE ================= -->
+  <h1 class="main-title">STRIKE : HAKAI PROTOCOL</h1>
+
+  <!-- ================= NAV ================= -->
+  <div class="nav">
+    <div class="nav-card" onclick="showScreen('awakening')">AWAKENING</div>
+    <div class="nav-card" onclick="showScreen('habits')">HABITS</div>
+    <div class="nav-card" onclick="showScreen('quests')">QUESTS</div>
+    <div class="nav-card" onclick="showScreen('gates')">GATES</div>
+  </div>
+
+  <!-- ================= AWAKENING ================= -->
+  <div id="awakening" class="screen">
+    <h2>AWAKENING</h2>
+
+    <div class="awakening-box locked">
+      <p class="awakening-text">
+        Your consciousness has not yet synchronized.
+      </p>
+      <p class="awakening-sub">
+        Complete a perfect month to awaken.
+      </p>
+      <div class="awakening-seal">🔒</div>
+    </div>
+  </div>
+
+  <!-- ================= QUESTS / STORY ================= -->
+  <div id="quests" class="screen">
+
+    <h2 class="section-title">STORY : ASCENSION TOWER</h2>
+
+    <div id="storyTower" class="story-tower">
+      <!-- Floors injected by JS -->
+    </div>
+
+  </div>
+
+  <!-- ================= HABITS ================= -->
+  <div id="habits" class="screen">
+    <h2>HABITS</h2>
+
+    <div class="habit-controls">
+      <select id="habitMonth"></select>
+      <select id="habitDay"></select>
+    </div>
+
+    <div id="habitList" class="habit-list"></div>
+  </div>
+
+  <!-- ================= GATES ================= -->
+  <div id="gates" class="screen">
+    <h2>GATES</h2>
+    <p>Boss encounters locked.</p>
+  </div>
+
+  <!-- ================= PLAYER PANEL ================= -->
+  <div class="player-panel">
+
+    <div class="player-header">
+      <h2 id="playerName"></h2>
+      <button class="back-btn" onclick="goBack()">← Change</button>
+    </div>
+
+    <img id="playerImg" class="player-img">
+
+    <div class="level-box">
+      <span id="playerLevel">LV. 1</span>
+    </div>
+
+    <div class="xp-bar">
+      <div class="xp-fill" id="xpFill"></div>
+    </div>
+
+    <div class="xp-text" id="xpText">0 / 100 XP</div>
+
+  </div>
+
+</div>
+
+<!-- ================= SYSTEM POPUP ================= -->
+<div id="popup" class="popup hidden"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+<button onclick="exportProgress()">BACKUP PROGRESS</button>
+<input type="file" onchange="importProgress(this.files[0])">

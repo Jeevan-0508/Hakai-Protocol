@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose Your Character</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url("Hakaiworld-2.png") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #a855f7;
+      text-shadow: 0 0 25px #8b5cf6;
+    }
+
+    .container {
+      display: flex;
+      gap: 100px;
+    }
+
+    .char {
+      cursor: pointer;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .char:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 40px #8b5cf6;
+    }
+
+    img {
+      width: 280px;
+      border-radius: 15px;
+      border: 2px solid #8b5cf6;
+    }
+
+    .name {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      color: #c084fc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>WHOM DO YOU WANT TO PLAY AS?</h1>
+
+<div class="char" onclick="selectChar('STRIKER')">
+  <img src="striker_jk.png">
+  <div class="name">STRIKER</div>
+</div>
+
+<div class="char" onclick="selectChar('CATH_GEMS')">
+  <img src="cath_gems.png">
+  <div class="name">CATH_GEMS</div>
+</div>
+
+
+<script>
+function selectChar(name) {
+  localStorage.setItem("player", name);
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

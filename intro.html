@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STRIKE : HAKAI PROTOCOL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: black;
+      color: #a855f7;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-shadow: 0 0 20px #8b5cf6;
+    }
+
+    .story {
+      max-width: 600px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      min-height: 80px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 1px solid #8b5cf6;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      box-shadow: 0 0 15px #8b5cf6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="title">STRIKE : HAKAI PROTOCOL</div>
+
+<div class="story" id="story">
+Reality is not what it seems...
+</div>
+
+<div>
+  <button onclick="nextLine()">START</button>
+  <button onclick="skip()">SKIP</button>
+</div>
+
+<script>
+const lines = [
+"Reality is not what it seems...",
+"Most humans live inside invisible loops.",
+"Repeating days. Repeating thoughts.",
+"Never leveling up.",
+"[ERROR] SUBJECT HAS BREACHED NPC LIMITS",
+"You noticed the system.",
+"And now the system has noticed you.",
+"[SYSTEM] WELCOME, STRIKE."
+];
+
+let i = 0;
+
+function nextLine() {
+  i++;
+  if (i < lines.length) {
+    document.getElementById("story").innerText = lines[i];
+  } else {
+    window.location.href = "select.html";
+
+  }
+}
+
+function skip() {
+  window.location.href = "select.html";
+
+}
+</script>
+
+</body>
+</html>
