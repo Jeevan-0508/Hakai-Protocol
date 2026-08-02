@@ -154,6 +154,21 @@ hakai-protocol/
 
 ---
 
+
+## 📸 Screenshots
+
+| Intro Screen | Character Select |
+|:---:|:---:|
+| ![Intro](screenshot-intro.png) | ![Character Select](screenshot-character-select.png) |
+| *Cinematic entry — "Reality is not what it seems..."* | *Choose your fighter — Striker or Cath* |
+
+| Habits Dashboard |
+|:---:|
+| ![Habits](screenshot-habits.png) |
+| *Daily habit tracking with XP, level card, and completion tracking* |
+
+---
+
 ## 💡 Why I Built This
 
 Habit apps are boring. Tracking streaks in a spreadsheet doesn't motivate anyone. The idea here was to make the *act of self-improvement* feel like progressing through a game — because the psychology of games (reward loops, narrative stakes, level-up dopamine) is exactly what makes habits stick.
