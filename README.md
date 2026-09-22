@@ -1,3 +1,10 @@
+> ⚠️ **Legacy repository.** This is the original HAKAI implementation (the habit-tracker-as-RPG,
+> pre-narrative-engine). Active development moved to
+> [**HAKAI Protocol v2**](https://github.com/Jeevan-0508/hakai-protocol-v2) — same core idea,
+> rebuilt with a real dark-fantasy RPG engine, PWA install, and a habit-driven world
+> ([HAKAI // WORLD](https://github.com/Jeevan-0508/hakai_world)) built on top of it. Kept here
+> unmodified for the record, not deleted.
+
 <div align="center">
 
 # ⚔️ HAKAI PROTOCOL
@@ -191,7 +198,7 @@ The 30-floor story structure mirrors the actual experience of building disciplin
 
 <div align="center">
 
-**Built by [Jeevan Kumar](https://github.com/Jeevan-0508)**
+**Built by [Jeevan Siddhabhaktula](https://github.com/Jeevan-0508)**
 
 *The system rewards those who show up.*
 
